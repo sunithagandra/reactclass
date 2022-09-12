@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form class="form_bg" action="redirect.html" method="GET">
+        <label for="fname">FirstName:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="firstname"><br>
+        <label for="lname">LirstName:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="lastname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="email" required><br>
+        <label for="salary">Salary:</label><br>
+        <input type="number" id="salary" name="salary" min="10" max="1000" required><br>
+        <label for="bday">BirthDate:</label><br>
+        <input type="date" id="bday" name="bday" required><br>
+        <div>
+            Favourite color:<br>
+        <label for="blue">Blue:</label>
+        <input type="checkbox" id="blue" name="blue" required><br>
+        <label for="white">white:</label>
+        <input type="checkbox" id="white" name="white" required><br>
+        </div>
+
+        <div>
+            Gender:<br>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" required><br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" required><br>
+        </div>
+
+        <div>
+            <label for="color">eyecolor</label>
+            <select name="color" id="color" multiple>
+                <option value="brown">Brown</option>
+                <option label="black" value="black"></option>
+            </select>
+        </div>
+        <button type="reset">Reset</button>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
